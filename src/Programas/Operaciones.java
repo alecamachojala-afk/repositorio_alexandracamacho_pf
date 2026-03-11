@@ -14,7 +14,7 @@ public class Operaciones {
     public static void main(String[] args){
   String empleado;      
 //declarando variables
-double compra1,compra2,compra3,tc,pc;
+double compra1,compra2,compra3,tc,pc,desc,tpago;
 Scanner lectura=new Scanner(System.in);
 //entrada de datos
 System.out.print("Nombre de empleado:");
@@ -27,9 +27,13 @@ System.out.print("Ingresar compra 3:");
 compra3=lectura.nextDouble();
 //proceso de datos
 tc=compra1+compra2+compra3;
+desc=tc*0.2;
 pc=tc/3;
+tpago=tc-desc;
 //salida de datos
 System.out.println("El total de compras es:"+tc);
+System.out.println("El descuento de la compra es:"+desc);
+System.out.println("El total a pagar es:"+tpago);
 System.out.println("El promedio de compra es:"+pc);
 }
 }
